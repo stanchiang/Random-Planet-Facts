@@ -1,0 +1,177 @@
+Stanleys-MacBook-Pro-2:~ stanley$ git clone https://github.com/stanchiang/Random-Planet-Facts
+Cloning into 'Random-Planet-Facts'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 680 bytes | 340.00 KiB/s, done.
+You have new mail in /var/mail/stanley
+Stanleys-MacBook-Pro-2:~ stanley$ cd Random-Planet-Facts/
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ls
+README.md
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ touch index.html
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git add .
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git commit -m "pasted in html file from tutorial"
+[main 40a9c3b] pasted in html file from tutorial
+ 3 files changed, 79 insertions(+), 2 deletions(-)
+ create mode 100644 .DS_Store
+ delete mode 100644 README.md
+ create mode 100644 index.html
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git push
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/stanchiang/Random-Planet-Facts/'
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git push origin main
+Username for 'https://github.com': stanchiang
+Password for 'https://stanchiang@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/stanchiang/Random-Planet-Facts/'
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git push origin main
+Username for 'https://github.com': stanchiang  
+Password for 'https://stanchiang@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.98 KiB | 1.98 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/stanchiang/Random-Planet-Facts
+   8d6b83b..40a9c3b  main -> main
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git add .
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git commit -m "updated index file with link to an about page"
+[main 2493d61] updated index file with link to an about page
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ touch about.html
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git add .
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git commit -m "added about page with custom string at bottom"
+[main 20bf851] added about page with custom string at bottom
+ 1 file changed, 38 insertions(+)
+ create mode 100644 about.html
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	moon-logo.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git add .
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git commit -m "added moon logo image"
+[main 2b19c5b] added moon logo image
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 moon-logo.png
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 9.23 KiB | 9.23 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/stanchiang/Random-Planet-Facts
+   40a9c3b..2b19c5b  main -> main
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ 
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ 
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ipfs add -r
+ipfs: Reading from /dev/stdin; send Ctrl-d to stop.
+^C
+Error: context canceled
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ 
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ 
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ cd
+Stanleys-MacBook-Pro-2:~ stanley$ cd Random-Planet-Facts/
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ls
+about.html	index.html	moon-logo.png
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ipfs add -r .
+added QmRivvgXFSuczVaxwgMuRDVyrSKvqKtcm8cE4Y4q2KgG8Y Random-Planet-Facts/about.html
+added QmNZXfnYpv4EtHKNBCJyVUF9eJ7grQ5XTmPmfMWBWTAKSy Random-Planet-Facts/index.html
+added QmW8U3NEHx3p73Nj9645sGnGa8XzR43rQh3Kd52UKncWMo Random-Planet-Facts/moon-logo.png
+added QmQqGxvYCuMEKAwPJcCDBbzouG15z7cdQM9Wtb7sc1zPmq Random-Planet-Facts
+ 12.67 KiB / 12.67 KiB [====================================================================================================================================] 100.00%Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ipfs name publish /ipfs/QmQqGxvYCuMEKAwPJcCDBbzouG15z7cdQM9Wtb7sc1zPmq
+Published to k51qzi5uqu5dlrdku25yzvq26f3v6hml9litxahfwwggkc6429op1tr9kitov2: /ipfs/QmQqGxvYCuMEKAwPJcCDBbzouG15z7cdQM9Wtb7sc1zPmq
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   about.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git add .
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git commit -m "trivial update to test ipfs publishing"
+[main a86c06e] trivial update to test ipfs publishing
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/stanchiang/Random-Planet-Facts
+   2b19c5b..a86c06e  main -> main
+Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ipfs add -r .
+added QmV3GvbYZy3sxhet9AGBF7YguGqFsMAdaf6x7NHzomaPCL Random-Planet-Facts/about.html
+added QmNZXfnYpv4EtHKNBCJyVUF9eJ7grQ5XTmPmfMWBWTAKSy Random-Planet-Facts/index.html
+added QmW8U3NEHx3p73Nj9645sGnGa8XzR43rQh3Kd52UKncWMo Random-Planet-Facts/moon-logo.png
+added QmdWV9WZYDaHe65JqVqLRwAcqykU9dPiG5RTgmG9XXebjb Random-Planet-Facts
+ 12.66 KiB / 12.66 KiB [====================================================================================================================================] 100.00%Stanleys-MacBook-Pro-2:Random-Planet-Facts stanley$ ipfs name publish /ipfs/QmdWV9WZYDaHe65JqVqLRwAcqykU9dPiG5RTgmG9XXebjb
+Published to k51qzi5uqu5dlrdku25yzvq26f3v6hml9litxahfwwggkc6429op1tr9kitov2: /ipfs/QmdWV9WZYDaHe65JqVqLRwAcqykU9dPiG5RTgmG9XXebjb
